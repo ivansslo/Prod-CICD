@@ -1,0 +1,15 @@
+template:
+  name: SlTemp
+  type: Step
+  projectIdentifier: Drone
+  orgIdentifier: default
+  spec:
+    type: Run
+    spec:
+      connectorRef: account.harnessImage
+      image: kubernetes
+      shell: Bash
+      command: echo "Welcome to Harness CI"
+      imagePullPolicy: Never
+  identifier: SlTemp
+  versionLabel: V1
